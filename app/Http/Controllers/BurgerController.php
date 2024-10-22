@@ -43,4 +43,44 @@ class BurgerController extends Controller
 
     }
     //
+    public function show($id){
+        $burgers = [
+            [
+                'id'=>1,
+                'name'=>'babybirba',
+                'type'=>'chicken',
+                'price'=>5,
+                'img'=>'https://picsum.photos/200/300'
+            ],
+            [
+                'id'=>2,
+                'name'=>'satan',
+                'type'=>'vegan',
+                'price'=>15,
+                'img'=>'https://picsum.photos/200/300'
+            ],
+            [
+                'id'=>3,
+                'name'=>'Queen',
+                'type'=>'beef',
+                'price'=>9,
+                'img'=>'https://picsum.photos/200/300'
+            ],
+
+            [
+                'id'=>4,
+                'name'=>'attentionQueen',
+                'type'=>'glutenfree',
+                'price'=>18,
+                'img'=>'https://picsum.photos/200/300'
+            ],
+
+        ];
+        foreach ($burgers as $burger) {
+            if ($id == $burger['id']) {
+                return view('burger.show',['burger'=>$burger]);
+            }
+        }
+
+    }
 }

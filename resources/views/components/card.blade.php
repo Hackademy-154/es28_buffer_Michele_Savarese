@@ -4,6 +4,6 @@
         <h5 class="card-title">{{$name}}</h5>
         <p class="card-text">{{$type}}</p>
         <p class="card-text">{{$price}}</p>
-        {{-- <a href="{{route('burgerDetail', ['id'=>$dataId])}}" class="btn btn-primary">Dettaglio Panino</a> --}}
+        <a href="{{route('burgerDetail', ['id'=>$dataId])}}" class="btn btn-primary">Dettaglio Panino</a>
     </div>
 </div>
