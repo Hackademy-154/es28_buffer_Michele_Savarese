@@ -13,7 +13,7 @@
           ">Homepage</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="{{route('burgerIndex')}}">I nostri panini</a>
         </li>
         </li>
       </ul>
