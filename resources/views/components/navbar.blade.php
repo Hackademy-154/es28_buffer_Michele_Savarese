@@ -15,7 +15,10 @@
         <li class="nav-item">
           <a class="nav-link" href="{{route('burgerIndex')}}">I nostri panini</a>
         </li>
-        </li>
+        {{-- </li> --}}
+        <li class="nav-item">
+            <a class="nav-link" href="/">Scrivici</a>
+          </li>
       </ul>
     </div>
   </div>

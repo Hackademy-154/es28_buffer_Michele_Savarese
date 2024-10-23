@@ -8,6 +8,5 @@ Route::get('/',[PublicController::class, 'home']
     // return view('welcome');
 )->name('welcome');
 
-
 Route::get('/burgers/index',[BurgerController::class,'index'])->name('burgerIndex');
 Route::get('/burger/detail/{id}', [BurgerController::class,'show'])->name('burgerDetail');
