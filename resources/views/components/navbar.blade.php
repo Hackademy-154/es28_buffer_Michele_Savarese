@@ -17,7 +17,7 @@
         </li>
         {{-- </li> --}}
         <li class="nav-item">
-            <a class="nav-link" href="/">Scrivici</a>
+            <a class="nav-link" href="{{route('contact.us')}}">Scrivici</a>
           </li>
       </ul>
     </div>
